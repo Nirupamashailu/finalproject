@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-24T01:07:02 IST" name="CrossBrowser Test Suite" finished-at="2025-01-24T01:07:21 IST" duration-ms="19012">
+  <suite started-at="2025-01-24T01:23:58 IST" name="CrossBrowser Test Suite" finished-at="2025-01-24T01:25:04 IST" duration-ms="65773">
     <groups>
     </groups>
-    <test started-at="2025-01-24T01:07:02 IST" name="Chrome Tests" finished-at="2025-01-24T01:07:21 IST" duration-ms="19012">
+    <test started-at="2025-01-24T01:23:58 IST" name="Chrome Tests" finished-at="2025-01-24T01:25:04 IST" duration-ms="65773">
       <class name="finalproject.homepage">
-        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:finalproject.homepage@38d8f54a]" started-at="2025-01-24T01:07:02 IST" name="setDriver" finished-at="2025-01-24T01:07:03 IST" duration-ms="1096" status="PASS">
+        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:finalproject.homepage@38d8f54a]" started-at="2025-01-24T01:23:58 IST" name="setDriver" finished-at="2025-01-24T01:23:59 IST" duration-ms="1054" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,106 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="verifyeachHealthProgramPageContent()[pri:0, instance:finalproject.homepage@38d8f54a]" started-at="2025-01-24T01:07:03 IST" name="verifyeachHealthProgramPageContent" finished-at="2025-01-24T01:07:21 IST" duration-ms="17773" status="PASS">
+        <test-method signature="VerifysearchBarFunctionality()[pri:0, instance:finalproject.homepage@38d8f54a]" started-at="2025-01-24T01:23:59 IST" name="VerifysearchBarFunctionality" finished-at="2025-01-24T01:24:04 IST" duration-ms="5071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifysearchBarFunctionality -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:finalproject.homepage@38d8f54a]" started-at="2025-01-24T01:24:04 IST" name="quitBrowser" finished-at="2025-01-24T01:24:05 IST" duration-ms="130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:finalproject.homepage@38d8f54a]" started-at="2025-01-24T01:24:05 IST" name="setDriver" finished-at="2025-01-24T01:24:05 IST" duration-ms="710" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method signature="userRegistrationandlogin()[pri:0, instance:finalproject.homepage@38d8f54a]" started-at="2025-01-24T01:24:05 IST" name="userRegistrationandlogin" finished-at="2025-01-24T01:24:20 IST" duration-ms="15109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistrationandlogin -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:finalproject.homepage@38d8f54a]" started-at="2025-01-24T01:24:20 IST" name="quitBrowser" finished-at="2025-01-24T01:24:20 IST" duration-ms="117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:finalproject.homepage@38d8f54a]" started-at="2025-01-24T01:24:20 IST" name="setDriver" finished-at="2025-01-24T01:24:21 IST" duration-ms="676" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method signature="verifyHealthProgramResourcelinks()[pri:0, instance:finalproject.homepage@38d8f54a]" started-at="2025-01-24T01:24:21 IST" name="verifyHealthProgramResourcelinks" finished-at="2025-01-24T01:24:36 IST" duration-ms="14539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHealthProgramResourcelinks -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:finalproject.homepage@38d8f54a]" started-at="2025-01-24T01:24:36 IST" name="quitBrowser" finished-at="2025-01-24T01:24:36 IST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:finalproject.homepage@38d8f54a]" started-at="2025-01-24T01:24:36 IST" name="setDriver" finished-at="2025-01-24T01:24:36 IST" duration-ms="711" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method signature="verifyNavigationBar()[pri:0, instance:finalproject.homepage@38d8f54a]" started-at="2025-01-24T01:24:36 IST" name="verifyNavigationBar" finished-at="2025-01-24T01:24:40 IST" duration-ms="3685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigationBar -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:finalproject.homepage@38d8f54a]" started-at="2025-01-24T01:24:40 IST" name="quitBrowser" finished-at="2025-01-24T01:24:40 IST" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:finalproject.homepage@38d8f54a]" started-at="2025-01-24T01:24:40 IST" name="setDriver" finished-at="2025-01-24T01:24:41 IST" duration-ms="704" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method signature="verifyeachHealthProgramPageContent()[pri:0, instance:finalproject.homepage@38d8f54a]" started-at="2025-01-24T01:24:41 IST" name="verifyeachHealthProgramPageContent" finished-at="2025-01-24T01:24:59 IST" duration-ms="17598" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyeachHealthProgramPageContent -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:finalproject.homepage@38d8f54a]" started-at="2025-01-24T01:07:21 IST" name="quitBrowser" finished-at="2025-01-24T01:07:21 IST" duration-ms="133" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:finalproject.homepage@38d8f54a]" started-at="2025-01-24T01:24:59 IST" name="quitBrowser" finished-at="2025-01-24T01:24:59 IST" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:finalproject.homepage@38d8f54a]" started-at="2025-01-24T01:24:59 IST" name="setDriver" finished-at="2025-01-24T01:24:59 IST" duration-ms="697" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method signature="verifyhealthProgramDropdown()[pri:0, instance:finalproject.homepage@38d8f54a]" started-at="2025-01-24T01:24:59 IST" name="verifyhealthProgramDropdown" finished-at="2025-01-24T01:25:04 IST" duration-ms="4461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyhealthProgramDropdown -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:finalproject.homepage@38d8f54a]" started-at="2025-01-24T01:25:04 IST" name="quitBrowser" finished-at="2025-01-24T01:25:04 IST" duration-ms="118" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->

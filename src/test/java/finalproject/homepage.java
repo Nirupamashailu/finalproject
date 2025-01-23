@@ -26,7 +26,7 @@ public class homepage {
 		driver = new crossbrowsing().getDriver(browserName);
 	};
 
-	@Test(enabled = false)
+	@Test
 	public void verifyNavigationBar() {
 
 		driver.get("https://westfloridaahec.org/");
@@ -39,7 +39,7 @@ public class homepage {
 
 	};
 
-	@Test(enabled = false)
+	@Test
 
 	public void verifyhealthProgramDropdown() {
 		driver.get("https://westfloridaahec.org/");
@@ -66,7 +66,7 @@ public class homepage {
 		Assert.assertEquals(actualValues, expectedValues, "Dropdown values do not match!");
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void verifyHealthProgramResourcelinks() {
 		driver.get("https://westfloridaahec.org/");
 		WebElement container = driver.findElement(By.cssSelector(".fusion-content-boxes"));
@@ -100,7 +100,7 @@ public class homepage {
 		Assert.assertEquals(actualLinks, expectedLinks, "Links do not match the expected values!");
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void VerifysearchBarFunctionality() {
 		driver.get("https://westfloridaahec.org/");
 		WebElement searchbox = driver.findElement(By.xpath(
@@ -160,7 +160,7 @@ public class homepage {
 
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void userRegistrationandlogin() {
 		driver.get("https://westfloridaahec.org/my-account/");
 		driver.findElement(By.xpath("//*[@id='reg_username']")).sendKeys("Nupsu4");
