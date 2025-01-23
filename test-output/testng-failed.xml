@@ -7,34 +7,10 @@
       <class name="finalproject.homepage">
         <methods>
           <include name="userRegistrationandlogin"/>
-          <include name="setDriver"/>
           <include name="quitBrowser"/>
+          <include name="setDriver"/>
         </methods>
       </class> <!-- finalproject.homepage -->
     </classes>
   </test> <!-- Chrome Tests(failed) -->
-  <test thread-count="5" name="Edge Tests(failed)">
-    <parameter name="browserName" value="edge"/>
-    <classes>
-      <class name="finalproject.homepage">
-        <methods>
-          <include name="userRegistrationandlogin"/>
-          <include name="setDriver"/>
-          <include name="quitBrowser"/>
-        </methods>
-      </class> <!-- finalproject.homepage -->
-    </classes>
-  </test> <!-- Edge Tests(failed) -->
-  <test thread-count="5" name="Firefox Tests(failed)">
-    <parameter name="browserName" value="firefox"/>
-    <classes>
-      <class name="finalproject.homepage">
-        <methods>
-          <include name="userRegistrationandlogin"/>
-          <include name="setDriver"/>
-          <include name="quitBrowser"/>
-        </methods>
-      </class> <!-- finalproject.homepage -->
-    </classes>
-  </test> <!-- Firefox Tests(failed) -->
 </suite> <!-- Failed suite [CrossBrowser Test Suite] -->
