@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-CrossBrowser_Test_Suite" class="navigator-link">
-              <span class="suite-name border-passed">CrossBrowser Test Suite</span>
+              <span class="suite-name border-failed">CrossBrowser Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-CrossBrowser_Test_Suite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-CrossBrowser_Test_Suite" class="hide-methods failed suite-CrossBrowser_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-CrossBrowser_Test_Suite -->
+                      <a href="#" panel-name="suite-CrossBrowser_Test_Suite" class="show-methods failed suite-CrossBrowser_Test_Suite"> (show)</a> <!-- show-methods failed suite-CrossBrowser_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-CrossBrowser_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowser_Test_Suite" title="finalproject.homepage" class="method navigator-link" hash-for-method="userRegistrationandlogin">userRegistrationandlogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowser_Test_Suite" title="finalproject.homepage" class="method navigator-link" hash-for-method="userRegistrationandlogin">userRegistrationandlogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-CrossBrowser_Test_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,12 +123,7 @@
                     <div class="method-list-content passed suite-CrossBrowser_Test_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-CrossBrowser_Test_Suite" title="finalproject.homepage" class="method navigator-link" hash-for-method="verifyeachHealthProgramPageContent">verifyeachHealthProgramPageContent</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-CrossBrowser_Test_Suite" title="finalproject.homepage" class="method navigator-link" hash-for-method="verifyeachHealthProgramPageContent">verifyeachHealthProgramPageContent</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CrossBrowser_Test_Suite" title="finalproject.homepage" class="method navigator-link" hash-for-method="userRegistrationandlogin">userRegistrationandlogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-CrossBrowser_Test_Suite -->
@@ -124,6 +138,74 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-CrossBrowser_Test_Suite" class="panel CrossBrowser_Test_Suite">
+          <div class="suite-CrossBrowser_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">finalproject.homepage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="userRegistrationandlogin">
+                  </a> <!-- userRegistrationandlogin -->
+                  <span class="method-name">userRegistrationandlogin</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;username&apos;]&quot;}
+  (Session info: chrome=132.0.6834.83)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eab64658d96ae7b6decf6b6ebcc10525, findElement {using=xpath, value=//*[@id=&apos;username&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: C:\Users\KALLURI SHOBAN BAB...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63321}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63321/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eab64658d96ae7b6decf6b6ebcc10525
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at finalproject.homepage.userRegistrationandlogin(homepage.java:165)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="userRegistrationandlogin">
+                  </a> <!-- userRegistrationandlogin -->
+                  <span class="method-name">userRegistrationandlogin</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [0ced2731-bf84-47b2-9f80-19fe9f6af195, findElement {using=xpath, value=//*[@id=&apos;reg_username&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 134.0.2, moz:accessibilityChecks: false, moz:buildID: 20250120135430, moz:debuggerAddress: 127.0.0.1:26056, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10484, moz:profile: C:\Users\KALLURI SHOBAN BAB..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:26056/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 0ced2731-bf84-47b2-9f80-19fe9f6af195
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at finalproject.homepage.userRegistrationandlogin(homepage.java:158)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossBrowser_Test_Suite-class-failed -->
           <div class="suite-CrossBrowser_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -132,16 +214,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyeachHealthProgramPageContent">
-                  </a> <!-- verifyeachHealthProgramPageContent -->
-                  <span class="method-name">verifyeachHealthProgramPageContent</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyeachHealthProgramPageContent">
-                  </a> <!-- verifyeachHealthProgramPageContent -->
-                  <span class="method-name">verifyeachHealthProgramPageContent</span>
+                  <a name="userRegistrationandlogin">
+                  </a> <!-- userRegistrationandlogin -->
+                  <span class="method-name">userRegistrationandlogin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -168,6 +243,12 @@
       &lt;class name=&quot;finalproject.homepage&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Edge Tests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Firefox Tests&quot;&gt;
+    &lt;parameter name=&quot;browserName&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;finalproject.homepage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Firefox Tests --&gt;
 &lt;/suite&gt; &lt;!-- CrossBrowser Test Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -183,6 +264,9 @@
               </li>
               <li>
                 <span class="test-name">Edge Tests (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Firefox Tests (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -208,20 +292,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyeachHealthProgramPageContent')
+data.setCell(0, 1, 'userRegistrationandlogin')
 data.setCell(0, 2, 'finalproject.homepage')
-data.setCell(0, 3, 132414);
+data.setCell(0, 3, 80404);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyeachHealthProgramPageContent')
+data.setCell(1, 1, 'userRegistrationandlogin')
 data.setCell(1, 2, 'finalproject.homepage')
-data.setCell(1, 3, 21733);
+data.setCell(1, 3, 24842);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'userRegistrationandlogin')
+data.setCell(2, 2, 'finalproject.homepage')
+data.setCell(2, 3, 13940);
 window.suiteTableData['CrossBrowser_Test_Suite']= { tableData: data, tableDiv: 'times-div-CrossBrowser_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-CrossBrowser_Test_Suite">
               </div> <!-- times-div-CrossBrowser_Test_Suite -->
             </div> <!-- times-div -->
@@ -236,12 +324,20 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-CrossBrowser_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">8 ignored methods</span>
+            <span class="header-content">15 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">finalproject.homepage</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">VerifysearchBarFunctionality</span>
+                <br/>
+                <span class="ignored-method-name">VerifysearchBarFunctionality</span>
+                <br/>
+                <span class="ignored-method-name">VerifysearchBarFunctionality</span>
+                <br/>
+                <span class="ignored-method-name">verifyNavigationBar</span>
+                <br/>
                 <span class="ignored-method-name">verifyNavigationBar</span>
                 <br/>
                 <span class="ignored-method-name">verifyNavigationBar</span>
@@ -250,13 +346,19 @@ return data;
                 <br/>
                 <span class="ignored-method-name">verifyhealthProgramDropdown</span>
                 <br/>
-                <span class="ignored-method-name">VerifysearchBarFunctionality</span>
-                <br/>
-                <span class="ignored-method-name">VerifysearchBarFunctionality</span>
+                <span class="ignored-method-name">verifyhealthProgramDropdown</span>
                 <br/>
                 <span class="ignored-method-name">verifyHealthProgramResourcelinks</span>
                 <br/>
+                <span class="ignored-method-name">verifyeachHealthProgramPageContent</span>
+                <br/>
                 <span class="ignored-method-name">verifyHealthProgramResourcelinks</span>
+                <br/>
+                <span class="ignored-method-name">verifyeachHealthProgramPageContent</span>
+                <br/>
+                <span class="ignored-method-name">verifyHealthProgramResourcelinks</span>
+                <br/>
+                <span class="ignored-method-name">verifyeachHealthProgramPageContent</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -274,24 +376,42 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyeachHealthProgramPageContent</span>
-                <span class="method-start">2595 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">userRegistrationandlogin</span>
+                <span class="method-start">3312 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">135018 ms</span>
+                <span class="method-start">28175 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setDriver(edge)</span>
-                <span class="method-start">135602 ms</span>
+                <span class="method-start">29054 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyeachHealthProgramPageContent</span>
-                <span class="method-start">137650 ms</span>
+                <span class="method-name">userRegistrationandlogin</span>
+                <span class="method-start">31672 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">159388 ms</span>
+                <span class="method-start">112081 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setDriver(firefox)</span>
+                <span class="method-start">114007 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">userRegistrationandlogin</span>
+                <span class="method-start">121159 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">135107 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

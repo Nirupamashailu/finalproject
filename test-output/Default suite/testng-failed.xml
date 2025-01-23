@@ -5,9 +5,9 @@
     <classes>
       <class name="finalproject.homepage">
         <methods>
+          <include name="userRegistrationandlogin"/>
           <include name="setDriver"/>
           <include name="quitBrowser"/>
-          <include name="verifyeachHealthProgramPageContent"/>
         </methods>
       </class> <!-- finalproject.homepage -->
     </classes>

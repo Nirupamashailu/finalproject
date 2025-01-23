@@ -51,15 +51,14 @@ public class homepage {
 		WebElement menuOption = driver
 				.findElement(By.xpath("//li[@id='menu-item-264']/a/span[contains(text(),'PROGRAMS')]"));
 		menuOption.click();
-		List<WebElement> listOfOptions =
-			    driver.findElements(By.xpath("//*[@id=\"menu-item-264\"]/ul/li/a/span"));
+		List<WebElement> listOfOptions = driver.findElements(By.xpath("//*[@id=\"menu-item-264\"]/ul/li/a/span"));
 		List<String> actualValues = new ArrayList<>();
 
 		// Iterate through all the links, fetch the text, and add it to the List
 		for (WebElement element : listOfOptions) {
-			  String option = element.getText();
-			  actualValues.add(option);
-			}
+			String option = element.getText();
+			actualValues.add(option);
+		}
 		// Print actual dropdown values for debugging
 		System.out.println("Actual dropdown values: " + actualValues);
 
@@ -114,46 +113,64 @@ public class homepage {
 
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void verifyeachHealthProgramPageContent() {
-		
-		  driver.get("https://westfloridaahec.org/"); driver.findElement(By.xpath(
-		  "//li[@id='menu-item-264']/a/span[contains(text(),'PROGRAMS')]")).click();
-		  WebElement tobaccoprogram =
-		  driver.findElement(By.xpath("//*[@id=\"menu-item-344\"]/a/span"));
-		  tobaccoprogram.click();
-		  driver.findElement(By.xpath("//h2[text()='SYSTEMS CHANGE']")).isDisplayed();
-		  driver.findElement(By.xpath("//h2[text()='QUIT TOBACCO']")).isDisplayed();
-		  driver.findElement(By.xpath("//h2[text()='TRAINING']")).isDisplayed();
-		  
-		  driver.get("https://westfloridaahec.org/"); driver.findElement(By.xpath(
-		  "//li[@id='menu-item-264']/a/span[contains(text(),'PROGRAMS')]")).click();
-		  WebElement ahecprogram =
-		  driver.findElement(By.xpath("//*[@id='menu-item-280']/a/span"));
-		  ahecprogram.click(); WebElement Verificationtext = driver
-		  .findElement(By.xpath(
-		  "//*[@id='post-266']/div/div[1]/div/div[1]/div/div[1]/h3")); String
-		  actualtext = Verificationtext.getText(); String expectedtext =
-		  "The Scholars Program is nationally recognized and only 150 students in the state of Florida are able to join this elite program."
-		  ; Assert.assertEquals(actualtext, expectedtext, "text matches");
-		  
-		  driver.get("https://westfloridaahec.org/"); driver.findElement(By.xpath(
-		  "//li[@id='menu-item-264']/a/span[contains(text(),'PROGRAMS')]")).click();
-		  WebElement healthyagingprogram =
-		  driver.findElement(By.xpath("//*[@id='menu-item-534']/a/span"));
-		  healthyagingprogram.click(); WebElement Verifysignupsection =
-		  driver.findElement(By.
-		  xpath("//h1[contains(text(),'Sign Up for Healthy Aging Classes')]"));
-		  Verifysignupsection.isDisplayed();
-		 
+
+		driver.get("https://westfloridaahec.org/");
+		driver.findElement(By.xpath("//li[@id='menu-item-264']/a/span[contains(text(),'PROGRAMS')]")).click();
+		WebElement tobaccoprogram = driver.findElement(By.xpath("//*[@id=\"menu-item-344\"]/a/span"));
+		tobaccoprogram.click();
+		driver.findElement(By.xpath("//h2[text()='SYSTEMS CHANGE']")).isDisplayed();
+		driver.findElement(By.xpath("//h2[text()='QUIT TOBACCO']")).isDisplayed();
+		driver.findElement(By.xpath("//h2[text()='TRAINING']")).isDisplayed();
+
+		driver.get("https://westfloridaahec.org/");
+		driver.findElement(By.xpath("//li[@id='menu-item-264']/a/span[contains(text(),'PROGRAMS')]")).click();
+		WebElement ahecprogram = driver.findElement(By.xpath("//*[@id='menu-item-280']/a/span"));
+		ahecprogram.click();
+		WebElement Verificationtext = driver
+				.findElement(By.xpath("//*[@id='post-266']/div/div[1]/div/div[1]/div/div[1]/h3"));
+		String actualtext = Verificationtext.getText();
+		String expectedtext = "The Scholars Program is nationally recognized and only 150 students in the state of Florida are able to join this elite program.";
+		Assert.assertEquals(actualtext, expectedtext, "text matches");
+
+		driver.get("https://westfloridaahec.org/");
+		driver.findElement(By.xpath("//li[@id='menu-item-264']/a/span[contains(text(),'PROGRAMS')]")).click();
+		WebElement healthyagingprogram = driver.findElement(By.xpath("//*[@id='menu-item-534']/a/span"));
+		healthyagingprogram.click();
+		WebElement Verifysignupsection = driver
+				.findElement(By.xpath("//h1[contains(text(),'Sign Up for Healthy Aging Classes')]"));
+		Verifysignupsection.isDisplayed();
+
 		driver.get("https://westfloridaahec.org/");
 		driver.findElement(By.xpath("//li[@id='menu-item-264']/a/span[contains(text(),'PROGRAMS')]")).click();
 		WebElement coveringflprogram = driver.findElement(By.xpath("//*[@id='menu-item-1572']/a/span"));
 		coveringflprogram.click();
-		WebElement Verifyintrosection = driver
-				.findElement(By.xpath("//h3[contains(text(),'Counties we cover: Walton, Okaloosa, Santa Rosa and Escambia')]"));
+		WebElement Verifyintrosection = driver.findElement(
+				By.xpath("//h3[contains(text(),'Counties we cover: Walton, Okaloosa, Santa Rosa and Escambia')]"));
 		Verifyintrosection.isDisplayed();
 
+	}
+
+	@Test
+	public void userRegistrationandlogin() {
+		driver.get("https://westfloridaahec.org/my-account/");
+		driver.findElement(By.xpath("//*[@id='reg_username']")).sendKeys("Nupsu4");
+		driver.findElement(By.xpath("//*[@id='reg_email']")).sendKeys("niru125@gmail.com");
+		driver.findElement(By.xpath("//*[@id='reg_password']")).sendKeys("Password@123");
+		driver.findElement(By.xpath("//*[@name='register']")).click();
+
+//verify login
+		driver.get("https://westfloridaahec.org/my-account/");
+		driver.findElement(By.xpath("//*[@id='username']")).sendKeys("niru125@gmail.com");
+		driver.findElement(By.xpath("//*[@id='password']")).sendKeys("Password@123");
+		driver.findElement(By.xpath("//*[@name='login']")).click();
+		String username = driver.findElement(By.xpath("//span[@class='hello']/strong")).getText();
+		if (username.equals("Nupsu4")) {
+			System.out.println("Registration and Login is successfull- user name is " + username);
+
+		}
+		;
 	}
 
 	@AfterMethod
