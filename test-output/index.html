@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-CrossBrowser_Test_Suite" class="navigator-link">
-              <span class="suite-name border-failed">CrossBrowser Test Suite</span>
+              <span class="suite-name border-passed">CrossBrowser Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-CrossBrowser_Test_Suite" class="hide-methods failed suite-CrossBrowser_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-CrossBrowser_Test_Suite -->
-                      <a href="#" panel-name="suite-CrossBrowser_Test_Suite" class="show-methods failed suite-CrossBrowser_Test_Suite"> (show)</a> <!-- show-methods failed suite-CrossBrowser_Test_Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-CrossBrowser_Test_Suite" class="hide-methods passed suite-CrossBrowser_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-CrossBrowser_Test_Suite -->
+                      <a href="#" panel-name="suite-CrossBrowser_Test_Suite" class="show-methods passed suite-CrossBrowser_Test_Suite"> (show)</a> <!-- show-methods passed suite-CrossBrowser_Test_Suite -->
                     </span>
-                    <div class="method-list-content failed suite-CrossBrowser_Test_Suite">
+                    <div class="method-list-content passed suite-CrossBrowser_Test_Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-CrossBrowser_Test_Suite" title="finalproject.homepage" class="method navigator-link" hash-for-method="userRegistrationandlogin">userRegistrationandlogin</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowser_Test_Suite" title="finalproject.homepage" class="method navigator-link" hash-for-method="verifyeachHealthProgramPageContent">verifyeachHealthProgramPageContent</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-CrossBrowser_Test_Suite -->
+                    </div> <!-- method-list-content passed suite-CrossBrowser_Test_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,45 +118,21 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-CrossBrowser_Test_Suite" class="panel CrossBrowser_Test_Suite">
-          <div class="suite-CrossBrowser_Test_Suite-class-failed">
+          <div class="suite-CrossBrowser_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">finalproject.homepage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="userRegistrationandlogin">
-                  </a> <!-- userRegistrationandlogin -->
-                  <span class="method-name">userRegistrationandlogin</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=132.0.6834.111)
-Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.2&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1bc6df743aba5a520d3351d890df20a1, findElement {value=//*[@id=&apos;username&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.111, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: /var/folders/5g/p48r3ym11s1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63932}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:63932/devtoo..., se:cdpVersion: 132.0.6834.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1bc6df743aba5a520d3351d890df20a1
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at finalproject.homepage.userRegistrationandlogin(homepage.java:165)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
+                  <a name="verifyeachHealthProgramPageContent">
+                  </a> <!-- verifyeachHealthProgramPageContent -->
+                  <span class="method-name">verifyeachHealthProgramPageContent</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-CrossBrowser_Test_Suite-class-failed -->
+          </div> <!-- suite-CrossBrowser_Test_Suite-class-passed -->
         </div> <!-- panel CrossBrowser_Test_Suite -->
         <div panel-name="test-xml-CrossBrowser_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -212,14 +188,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'userRegistrationandlogin')
+data.setCell(0, 1, 'verifyeachHealthProgramPageContent')
 data.setCell(0, 2, 'finalproject.homepage')
-data.setCell(0, 3, 13217);
+data.setCell(0, 3, 17773);
 window.suiteTableData['CrossBrowser_Test_Suite']= { tableData: data, tableDiv: 'times-div-CrossBrowser_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-CrossBrowser_Test_Suite">
               </div> <!-- times-div-CrossBrowser_Test_Suite -->
             </div> <!-- times-div -->
@@ -244,7 +220,7 @@ return data;
                 <br/>
                 <span class="ignored-method-name">verifyHealthProgramResourcelinks</span>
                 <br/>
-                <span class="ignored-method-name">verifyeachHealthProgramPageContent</span>
+                <span class="ignored-method-name">userRegistrationandlogin</span>
                 <br/>
                 <span class="ignored-method-name">verifyhealthProgramDropdown</span>
                 <br/>
@@ -266,14 +242,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">userRegistrationandlogin</span>
-                <span class="method-start">1058 ms</span>
+                <span class="method-name">verifyeachHealthProgramPageContent</span>
+                <span class="method-start">1096 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">14277 ms</span>
+                <span class="method-start">18870 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

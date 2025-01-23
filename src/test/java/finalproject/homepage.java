@@ -113,7 +113,7 @@ public class homepage {
 
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void verifyeachHealthProgramPageContent() {
 
 		driver.get("https://westfloridaahec.org/");
@@ -123,36 +123,44 @@ public class homepage {
 		driver.findElement(By.xpath("//h2[text()='SYSTEMS CHANGE']")).isDisplayed();
 		driver.findElement(By.xpath("//h2[text()='QUIT TOBACCO']")).isDisplayed();
 		driver.findElement(By.xpath("//h2[text()='TRAINING']")).isDisplayed();
+		System.out.println("Tobacco program is verified");
 
 		driver.get("https://westfloridaahec.org/");
 		driver.findElement(By.xpath("//li[@id='menu-item-264']/a/span[contains(text(),'PROGRAMS')]")).click();
 		WebElement ahecprogram = driver.findElement(By.xpath("//*[@id='menu-item-280']/a/span"));
 		ahecprogram.click();
-		WebElement Verificationtext = driver
-				.findElement(By.xpath("//*[@id='post-266']/div/div[1]/div/div[1]/div/div[1]/h3"));
+		WebElement Verificationtext = driver.findElement(By.xpath("//*[@id='post-266']/div/div[1]/div/div[1]/div/div[1]/h3"));
 		String actualtext = Verificationtext.getText();
 		String expectedtext = "The Scholars Program is nationally recognized and only 150 students in the state of Florida are able to join this elite program.";
-		Assert.assertEquals(actualtext, expectedtext, "text matches");
+		Assert.assertEquals(actualtext, expectedtext, "text doesn't matches");
+		System.out.println("AHEC Scholars program is verified");
+
 
 		driver.get("https://westfloridaahec.org/");
 		driver.findElement(By.xpath("//li[@id='menu-item-264']/a/span[contains(text(),'PROGRAMS')]")).click();
 		WebElement healthyagingprogram = driver.findElement(By.xpath("//*[@id='menu-item-534']/a/span"));
 		healthyagingprogram.click();
-		WebElement Verifysignupsection = driver
-				.findElement(By.xpath("//h1[contains(text(),'Sign Up for Healthy Aging Classes')]"));
-		Verifysignupsection.isDisplayed();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		WebElement Verifysignupsection = driver.findElement(By.xpath("//h1[contains(text(),'Sign Up for Healthy Aging Classes')]"));
+		String text = Verifysignupsection.getText();
+		System.out.println(text);
+		Assert.assertEquals(text, "Sign Up for Healthy Aging Classes", "text doesn't match");
+		System.out.println("Healthy Aging program is verified");
+
+
+		
 
 		driver.get("https://westfloridaahec.org/");
 		driver.findElement(By.xpath("//li[@id='menu-item-264']/a/span[contains(text(),'PROGRAMS')]")).click();
 		WebElement coveringflprogram = driver.findElement(By.xpath("//*[@id='menu-item-1572']/a/span"));
 		coveringflprogram.click();
-		WebElement Verifyintrosection = driver.findElement(
-				By.xpath("//h3[contains(text(),'Counties we cover: Walton, Okaloosa, Santa Rosa and Escambia')]"));
+		WebElement Verifyintrosection = driver.findElement(By.xpath("//h3[contains(text(),'Counties we cover: Walton, Okaloosa, Santa Rosa and Escambia')]"));
 		Verifyintrosection.isDisplayed();
+		System.out.println("Covering Florida program is verified");
 
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void userRegistrationandlogin() {
 		driver.get("https://westfloridaahec.org/my-account/");
 		driver.findElement(By.xpath("//*[@id='reg_username']")).sendKeys("Nupsu4");
