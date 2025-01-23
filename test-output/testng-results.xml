@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="10" passed="0" failed="2" skipped="0">
+<testng-results ignored="8" total="10" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-23T18:20:41 IST" name="CrossBrowser Test Suite" finished-at="2025-01-23T18:21:07 IST" duration-ms="26131">
+  <suite started-at="2025-01-23T19:38:15 IST" name="CrossBrowser Test Suite" finished-at="2025-01-23T19:40:56 IST" duration-ms="160922">
     <groups>
     </groups>
-    <test started-at="2025-01-23T18:20:41 IST" name="Chrome Tests" finished-at="2025-01-23T18:20:54 IST" duration-ms="12308">
+    <test started-at="2025-01-23T19:38:15 IST" name="Chrome Tests" finished-at="2025-01-23T19:40:30 IST" duration-ms="135430">
       <class name="finalproject.homepage">
-        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:finalproject.homepage@7334aada]" started-at="2025-01-23T18:20:41 IST" name="setDriver" finished-at="2025-01-23T18:20:43 IST" duration-ms="1594" status="PASS">
+        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:finalproject.homepage@478190fc]" started-at="2025-01-23T19:38:15 IST" name="setDriver" finished-at="2025-01-23T19:38:18 IST" duration-ms="2593" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,85 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="verifyeachHealthProgramPageContent()[pri:0, instance:finalproject.homepage@7334aada]" started-at="2025-01-23T18:20:43 IST" name="verifyeachHealthProgramPageContent" finished-at="2025-01-23T18:20:54 IST" duration-ms="10580" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(text(),'Sign Up for Healthy Aging Classes')]"}
-  (Session info: chrome=132.0.6834.111)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.28.0', revision: 'ac342546e9'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.2', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b6720fd75204c8636420ca10abe69843, findElement {using=xpath, value=//h1[contains(text(),'Sign Up for Healthy Aging Classes')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.111, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: /var/folders/5g/p48r3ym11s1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50800}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50800/devtoo..., se:cdpVersion: 132.0.6834.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b6720fd75204c8636420ca10abe69843]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(text(),'Sign Up for Healthy Aging Classes')]"}
-  (Session info: chrome=132.0.6834.111)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.28.0', revision: 'ac342546e9'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.2', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b6720fd75204c8636420ca10abe69843, findElement {using=xpath, value=//h1[contains(text(),'Sign Up for Healthy Aging Classes')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.111, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: /var/folders/5g/p48r3ym11s1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50800}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50800/devtoo..., se:cdpVersion: 132.0.6834.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b6720fd75204c8636420ca10abe69843
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at finalproject.homepage.verifyeachHealthProgramPageContent(homepage.java:141)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="verifyeachHealthProgramPageContent()[pri:0, instance:finalproject.homepage@478190fc]" started-at="2025-01-23T19:38:18 IST" name="verifyeachHealthProgramPageContent" finished-at="2025-01-23T19:40:30 IST" duration-ms="132414" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyeachHealthProgramPageContent -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:finalproject.homepage@7334aada]" started-at="2025-01-23T18:20:54 IST" name="quitBrowser" finished-at="2025-01-23T18:20:54 IST" duration-ms="123" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:finalproject.homepage@478190fc]" started-at="2025-01-23T19:40:30 IST" name="quitBrowser" finished-at="2025-01-23T19:40:30 IST" duration-ms="381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
       </class> <!-- finalproject.homepage -->
     </test> <!-- Chrome Tests -->
-    <test started-at="2025-01-23T18:20:55 IST" name="Edge Tests" finished-at="2025-01-23T18:21:07 IST" duration-ms="12471">
+    <test started-at="2025-01-23T19:40:31 IST" name="Edge Tests" finished-at="2025-01-23T19:40:56 IST" duration-ms="25297">
       <class name="finalproject.homepage">
-        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:finalproject.homepage@1b7cc17c]" started-at="2025-01-23T18:20:55 IST" name="setDriver" finished-at="2025-01-23T18:20:56 IST" duration-ms="1020" status="PASS">
+        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:finalproject.homepage@78691363]" started-at="2025-01-23T19:40:31 IST" name="setDriver" finished-at="2025-01-23T19:40:33 IST" duration-ms="2048" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -107,77 +41,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="verifyeachHealthProgramPageContent()[pri:0, instance:finalproject.homepage@1b7cc17c]" started-at="2025-01-23T18:20:56 IST" name="verifyeachHealthProgramPageContent" finished-at="2025-01-23T18:21:06 IST" duration-ms="10284" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(text(),'Sign Up for Healthy Aging Classes')]"}
-  (Session info: MicrosoftEdge=132.0.2957.115)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.28.0', revision: 'ac342546e9'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.2', java.version: '23.0.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [9a090aede905ecadcdfda45fc100c3b6, findElement {using=xpath, value=//h1[contains(text(),'Sign Up for Healthy Aging Classes')]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 132.0.2957.115, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50906}, msedge: {msedgedriverVersion: 132.0.2957.115 (f14150e8a7c..., userDataDir: /var/folders/5g/p48r3ym11s1...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50906/devtoo..., se:cdpVersion: 132.0.2957.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9a090aede905ecadcdfda45fc100c3b6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(text(),'Sign Up for Healthy Aging Classes')]"}
-  (Session info: MicrosoftEdge=132.0.2957.115)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.28.0', revision: 'ac342546e9'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.2', java.version: '23.0.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [9a090aede905ecadcdfda45fc100c3b6, findElement {using=xpath, value=//h1[contains(text(),'Sign Up for Healthy Aging Classes')]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 132.0.2957.115, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50906}, msedge: {msedgedriverVersion: 132.0.2957.115 (f14150e8a7c..., userDataDir: /var/folders/5g/p48r3ym11s1...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50906/devtoo..., se:cdpVersion: 132.0.2957.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9a090aede905ecadcdfda45fc100c3b6
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at finalproject.homepage.verifyeachHealthProgramPageContent(homepage.java:141)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="verifyeachHealthProgramPageContent()[pri:0, instance:finalproject.homepage@78691363]" started-at="2025-01-23T19:40:33 IST" name="verifyeachHealthProgramPageContent" finished-at="2025-01-23T19:40:54 IST" duration-ms="21733" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyeachHealthProgramPageContent -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:finalproject.homepage@1b7cc17c]" started-at="2025-01-23T18:21:06 IST" name="quitBrowser" finished-at="2025-01-23T18:21:07 IST" duration-ms="1165" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:finalproject.homepage@78691363]" started-at="2025-01-23T19:40:54 IST" name="quitBrowser" finished-at="2025-01-23T19:40:56 IST" duration-ms="1505" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
