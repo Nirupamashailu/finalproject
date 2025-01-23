@@ -12,4 +12,10 @@
             <class name="finalproject.homepage" />
         </classes>
     </test>
+    <test name="Firefox Tests">
+        <parameter name="browserName" value="firefox" />
+        <classes>
+            <class name="finalproject.homepage" />
+        </classes>
+    </test>
 </suite>
