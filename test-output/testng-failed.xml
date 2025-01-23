@@ -6,7 +6,6 @@
     <classes>
       <class name="finalproject.homepage">
         <methods>
-          <include name="verifyhealthProgramDropdown"/>
           <include name="setDriver"/>
           <include name="quitBrowser"/>
           <include name="verifyeachHealthProgramPageContent"/>
@@ -19,7 +18,6 @@
     <classes>
       <class name="finalproject.homepage">
         <methods>
-          <include name="verifyhealthProgramDropdown"/>
           <include name="setDriver"/>
           <include name="quitBrowser"/>
           <include name="verifyeachHealthProgramPageContent"/>

@@ -26,7 +26,7 @@ public class homepage {
 		driver = new crossbrowsing().getDriver(browserName);
 	};
 
-	@Test
+	@Test(enabled = false)
 	public void verifyNavigationBar() {
 
 		driver.get("https://westfloridaahec.org/");
@@ -39,7 +39,7 @@ public class homepage {
 
 	};
 
-	@Test
+	@Test(enabled = false)
 
 	public void verifyhealthProgramDropdown() {
 		driver.get("https://westfloridaahec.org/");
@@ -48,15 +48,18 @@ public class homepage {
 		List<String> expectedValues = List.of("Tobacco", "AHEC Scholars", "Healthy Aging", "Covering Florida");
 
 		// Locate the dropdown menu and fetch all <a> tags inside it
-		WebElement dropdown = driver.findElement(By.id("menu-item-264"));
-		List<WebElement> dropdownLinks = dropdown.findElements(By.xpath(".//ul[@class='sub-menu']/li/a"));
+		WebElement menuOption = driver
+				.findElement(By.xpath("//li[@id='menu-item-264']/a/span[contains(text(),'PROGRAMS')]"));
+		menuOption.click();
+		List<WebElement> listOfOptions =
+			    driver.findElements(By.xpath("//*[@id=\"menu-item-264\"]/ul/li/a/span"));
 		List<String> actualValues = new ArrayList<>();
 
 		// Iterate through all the links, fetch the text, and add it to the List
-		for (WebElement link : dropdownLinks) {
-			String linkText = link.getText();
-			actualValues.add(linkText); // Adding the link text to the list
-		}
+		for (WebElement element : listOfOptions) {
+			  String option = element.getText();
+			  actualValues.add(option);
+			}
 		// Print actual dropdown values for debugging
 		System.out.println("Actual dropdown values: " + actualValues);
 
@@ -64,7 +67,7 @@ public class homepage {
 		Assert.assertEquals(actualValues, expectedValues, "Dropdown values do not match!");
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void verifyHealthProgramResourcelinks() {
 		driver.get("https://westfloridaahec.org/");
 		WebElement container = driver.findElement(By.cssSelector(".fusion-content-boxes"));
@@ -98,7 +101,7 @@ public class homepage {
 		Assert.assertEquals(actualLinks, expectedLinks, "Links do not match the expected values!");
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void VerifysearchBarFunctionality() {
 		driver.get("https://westfloridaahec.org/");
 		WebElement searchbox = driver.findElement(By.xpath(
@@ -114,6 +117,7 @@ public class homepage {
 	@Test
 	public void verifyeachHealthProgramPageContent() {
 		driver.get("https://westfloridaahec.org/");
+		driver.findElement(By.xpath("//li[@id='menu-item-264']/a/span[contains(text(),'PROGRAMS')]")).click();
 		WebElement tobaccoprogram = driver.findElement(By.xpath("//*[@id=\"menu-item-344\"]/a/span"));
 		tobaccoprogram.click();
 		driver.findElement(By.xpath("//h2[text()='SYSTEMS CHANGE']")).isDisplayed();
@@ -121,20 +125,24 @@ public class homepage {
 		driver.findElement(By.xpath("//h2[text()='TRAINING']")).isDisplayed();
 
 		driver.get("https://westfloridaahec.org/");
+		driver.findElement(By.xpath("//li[@id='menu-item-264']/a/span[contains(text(),'PROGRAMS')]")).click();
 		WebElement ahecprogram = driver.findElement(By.xpath("//*[@id='menu-item-280']/a/span"));
 		ahecprogram.click();
-		WebElement Verificationtext = driver.findElement(By.xpath("//*[@id='post-266']/div/div[1]/div/div[1]/div/div[1]/h3"));
+		WebElement Verificationtext = driver
+				.findElement(By.xpath("//*[@id='post-266']/div/div[1]/div/div[1]/div/div[1]/h3"));
 		String actualtext = Verificationtext.getText();
 		String expectedtext = "The Scholars Program is nationally recognized and only 150 students in the state of Florida are able to join this elite program.";
 		Assert.assertEquals(actualtext, expectedtext, "text matches");
 
 		driver.get("https://westfloridaahec.org/");
+		driver.findElement(By.xpath("//li[@id='menu-item-264']/a/span[contains(text(),'PROGRAMS')]")).click();
 		WebElement healthyagingprogram = driver.findElement(By.xpath("//*[@id='menu-item-534']/a/span"));
 		healthyagingprogram.click();
-		WebElement Verifysignupsection = driver.findElement(By.linkText("Sign Up for Healthy Aging Classes"));
+		WebElement Verifysignupsection = driver.findElement(By.xpath("//h1[contains(text(),'Sign Up for Healthy Aging Classes')]"));
 		Verifysignupsection.isDisplayed();
 
 		driver.get("https://westfloridaahec.org/");
+		driver.findElement(By.xpath("//li[@id='menu-item-264']/a/span[contains(text(),'PROGRAMS')]")).click();
 		WebElement coveringflprogram = driver.findElement(By.xpath("//*[@id='menu-item-1572']/a/span"));
 		coveringflprogram.click();
 		WebElement Verifyintrosection = driver

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="6" failed="4" skipped="0">
+<testng-results ignored="8" total="10" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-23T02:20:50 IST" name="CrossBrowser Test Suite" finished-at="2025-01-23T02:22:18 IST" duration-ms="88236">
+  <suite started-at="2025-01-23T18:20:41 IST" name="CrossBrowser Test Suite" finished-at="2025-01-23T18:21:07 IST" duration-ms="26131">
     <groups>
     </groups>
-    <test started-at="2025-01-23T02:20:50 IST" name="Chrome Tests" finished-at="2025-01-23T02:21:34 IST" duration-ms="44453">
+    <test started-at="2025-01-23T18:20:41 IST" name="Chrome Tests" finished-at="2025-01-23T18:20:54 IST" duration-ms="12308">
       <class name="finalproject.homepage">
-        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:finalproject.homepage@3a93b025]" started-at="2025-01-23T02:20:50 IST" name="setDriver" finished-at="2025-01-23T02:20:52 IST" duration-ms="2589" status="PASS">
+        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:finalproject.homepage@7334aada]" started-at="2025-01-23T18:20:41 IST" name="setDriver" finished-at="2025-01-23T18:20:43 IST" duration-ms="1594" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,296 +18,36 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="VerifysearchBarFunctionality()[pri:0, instance:finalproject.homepage@3a93b025]" started-at="2025-01-23T02:20:52 IST" name="VerifysearchBarFunctionality" finished-at="2025-01-23T02:20:58 IST" duration-ms="5697" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifysearchBarFunctionality -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:finalproject.homepage@3a93b025]" started-at="2025-01-23T02:20:58 IST" name="quitBrowser" finished-at="2025-01-23T02:20:58 IST" duration-ms="351" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:finalproject.homepage@3a93b025]" started-at="2025-01-23T02:20:58 IST" name="setDriver" finished-at="2025-01-23T02:21:00 IST" duration-ms="1834" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setDriver -->
-        <test-method signature="verifyHealthProgramResourcelinks()[pri:0, instance:finalproject.homepage@3a93b025]" started-at="2025-01-23T02:21:00 IST" name="verifyHealthProgramResourcelinks" finished-at="2025-01-23T02:21:16 IST" duration-ms="16239" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHealthProgramResourcelinks -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:finalproject.homepage@3a93b025]" started-at="2025-01-23T02:21:16 IST" name="quitBrowser" finished-at="2025-01-23T02:21:17 IST" duration-ms="333" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:finalproject.homepage@3a93b025]" started-at="2025-01-23T02:21:17 IST" name="setDriver" finished-at="2025-01-23T02:21:18 IST" duration-ms="1600" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setDriver -->
-        <test-method signature="verifyNavigationBar()[pri:0, instance:finalproject.homepage@3a93b025]" started-at="2025-01-23T02:21:18 IST" name="verifyNavigationBar" finished-at="2025-01-23T02:21:23 IST" duration-ms="4819" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNavigationBar -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:finalproject.homepage@3a93b025]" started-at="2025-01-23T02:21:23 IST" name="quitBrowser" finished-at="2025-01-23T02:21:24 IST" duration-ms="328" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:finalproject.homepage@3a93b025]" started-at="2025-01-23T02:21:24 IST" name="setDriver" finished-at="2025-01-23T02:21:25 IST" duration-ms="1461" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setDriver -->
-        <test-method signature="verifyeachHealthProgramPageContent()[pri:0, instance:finalproject.homepage@3a93b025]" started-at="2025-01-23T02:21:25 IST" name="verifyeachHealthProgramPageContent" finished-at="2025-01-23T02:21:28 IST" duration-ms="3304" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        <test-method signature="verifyeachHealthProgramPageContent()[pri:0, instance:finalproject.homepage@7334aada]" started-at="2025-01-23T18:20:43 IST" name="verifyeachHealthProgramPageContent" finished-at="2025-01-23T18:20:54 IST" duration-ms="10580" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=132.0.6834.83)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(text(),'Sign Up for Healthy Aging Classes')]"}
+  (Session info: chrome=132.0.6834.111)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.28.0', revision: 'ac342546e9'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.2', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [81c1fd4607b9320ce19e4a22ca996e54, clickElement {id=f.B3A387F5E711770D1385D1018740080C.d.9E622C046ED37AE840A7144D5351C5BC.e.45}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: C:\Users\KALLURI SHOBAN BAB...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54800}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54800/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (81c1fd4607b9320ce19e4a22ca996e54)] -> xpath: //*[@id="menu-item-344"]/a/span]
-Session ID: 81c1fd4607b9320ce19e4a22ca996e54]]>
+Command: [b6720fd75204c8636420ca10abe69843, findElement {using=xpath, value=//h1[contains(text(),'Sign Up for Healthy Aging Classes')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.111, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: /var/folders/5g/p48r3ym11s1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50800}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50800/devtoo..., se:cdpVersion: 132.0.6834.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b6720fd75204c8636420ca10abe69843]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=132.0.6834.83)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(text(),'Sign Up for Healthy Aging Classes')]"}
+  (Session info: chrome=132.0.6834.111)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.28.0', revision: 'ac342546e9'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.2', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [81c1fd4607b9320ce19e4a22ca996e54, clickElement {id=f.B3A387F5E711770D1385D1018740080C.d.9E622C046ED37AE840A7144D5351C5BC.e.45}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: C:\Users\KALLURI SHOBAN BAB...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54800}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54800/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (81c1fd4607b9320ce19e4a22ca996e54)] -> xpath: //*[@id="menu-item-344"]/a/span]
-Session ID: 81c1fd4607b9320ce19e4a22ca996e54
+Command: [b6720fd75204c8636420ca10abe69843, findElement {using=xpath, value=//h1[contains(text(),'Sign Up for Healthy Aging Classes')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.111, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: /var/folders/5g/p48r3ym11s1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50800}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50800/devtoo..., se:cdpVersion: 132.0.6834.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b6720fd75204c8636420ca10abe69843
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
 at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at finalproject.homepage.verifyeachHealthProgramPageContent(homepage.java:118)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyeachHealthProgramPageContent -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:finalproject.homepage@3a93b025]" started-at="2025-01-23T02:21:28 IST" name="quitBrowser" finished-at="2025-01-23T02:21:29 IST" duration-ms="251" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:finalproject.homepage@3a93b025]" started-at="2025-01-23T02:21:29 IST" name="setDriver" finished-at="2025-01-23T02:21:30 IST" duration-ms="1894" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setDriver -->
-        <test-method signature="verifyhealthProgramDropdown()[pri:0, instance:finalproject.homepage@3a93b025]" started-at="2025-01-23T02:21:30 IST" name="verifyhealthProgramDropdown" finished-at="2025-01-23T02:21:34 IST" duration-ms="3364" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Dropdown values do not match!: Lists differ at element [0]: Tobacco !=  expected [Tobacco] but found []]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Dropdown values do not match!: Lists differ at element [0]: Tobacco !=  expected [Tobacco] but found []
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:1103)
-at finalproject.homepage.verifyhealthProgramDropdown(homepage.java:64)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyhealthProgramDropdown -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:finalproject.homepage@3a93b025]" started-at="2025-01-23T02:21:34 IST" name="quitBrowser" finished-at="2025-01-23T02:21:34 IST" duration-ms="325" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-      </class> <!-- finalproject.homepage -->
-    </test> <!-- Chrome Tests -->
-    <test started-at="2025-01-23T02:21:34 IST" name="Edge Tests" finished-at="2025-01-23T02:22:18 IST" duration-ms="43716">
-      <class name="finalproject.homepage">
-        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:finalproject.homepage@33d512c1]" started-at="2025-01-23T02:21:34 IST" name="setDriver" finished-at="2025-01-23T02:21:36 IST" duration-ms="1526" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setDriver -->
-        <test-method signature="VerifysearchBarFunctionality()[pri:0, instance:finalproject.homepage@33d512c1]" started-at="2025-01-23T02:21:36 IST" name="VerifysearchBarFunctionality" finished-at="2025-01-23T02:21:41 IST" duration-ms="5058" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifysearchBarFunctionality -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:finalproject.homepage@33d512c1]" started-at="2025-01-23T02:21:41 IST" name="quitBrowser" finished-at="2025-01-23T02:21:42 IST" duration-ms="1432" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:finalproject.homepage@33d512c1]" started-at="2025-01-23T02:21:42 IST" name="setDriver" finished-at="2025-01-23T02:21:44 IST" duration-ms="1973" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setDriver -->
-        <test-method signature="verifyHealthProgramResourcelinks()[pri:0, instance:finalproject.homepage@33d512c1]" started-at="2025-01-23T02:21:44 IST" name="verifyHealthProgramResourcelinks" finished-at="2025-01-23T02:21:57 IST" duration-ms="12879" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHealthProgramResourcelinks -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:finalproject.homepage@33d512c1]" started-at="2025-01-23T02:21:57 IST" name="quitBrowser" finished-at="2025-01-23T02:21:59 IST" duration-ms="1543" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:finalproject.homepage@33d512c1]" started-at="2025-01-23T02:21:59 IST" name="setDriver" finished-at="2025-01-23T02:22:00 IST" duration-ms="1683" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setDriver -->
-        <test-method signature="verifyNavigationBar()[pri:0, instance:finalproject.homepage@33d512c1]" started-at="2025-01-23T02:22:00 IST" name="verifyNavigationBar" finished-at="2025-01-23T02:22:03 IST" duration-ms="3114" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNavigationBar -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:finalproject.homepage@33d512c1]" started-at="2025-01-23T02:22:03 IST" name="quitBrowser" finished-at="2025-01-23T02:22:05 IST" duration-ms="1436" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:finalproject.homepage@33d512c1]" started-at="2025-01-23T02:22:05 IST" name="setDriver" finished-at="2025-01-23T02:22:06 IST" duration-ms="1442" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setDriver -->
-        <test-method signature="verifyeachHealthProgramPageContent()[pri:0, instance:finalproject.homepage@33d512c1]" started-at="2025-01-23T02:22:06 IST" name="verifyeachHealthProgramPageContent" finished-at="2025-01-23T02:22:10 IST" duration-ms="3537" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=132.0.2957.115)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [77b08d930548e6e2ea451679d5d83fb8, findElement {using=xpath, value=//h2[text()='SYSTEMS CHANGE']}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 132.0.2957.115, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:55030}, msedge: {msedgedriverVersion: 132.0.2957.115 (f14150e8a7c..., userDataDir: C:\Users\KALLURI SHOBAN BAB...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55030/devtoo..., se:cdpVersion: 132.0.2957.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 77b08d930548e6e2ea451679d5d83fb8]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=132.0.2957.115)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [77b08d930548e6e2ea451679d5d83fb8, findElement {using=xpath, value=//h2[text()='SYSTEMS CHANGE']}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 132.0.2957.115, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:55030}, msedge: {msedgedriverVersion: 132.0.2957.115 (f14150e8a7c..., userDataDir: C:\Users\KALLURI SHOBAN BAB...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55030/devtoo..., se:cdpVersion: 132.0.2957.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 77b08d930548e6e2ea451679d5d83fb8
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
@@ -315,7 +55,7 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at finalproject.homepage.verifyeachHealthProgramPageContent(homepage.java:119)
+at finalproject.homepage.verifyeachHealthProgramPageContent(homepage.java:141)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -344,15 +84,19 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyeachHealthProgramPageContent -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:finalproject.homepage@33d512c1]" started-at="2025-01-23T02:22:10 IST" name="quitBrowser" finished-at="2025-01-23T02:22:11 IST" duration-ms="1325" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:finalproject.homepage@7334aada]" started-at="2025-01-23T18:20:54 IST" name="quitBrowser" finished-at="2025-01-23T18:20:54 IST" duration-ms="123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:finalproject.homepage@33d512c1]" started-at="2025-01-23T02:22:11 IST" name="setDriver" finished-at="2025-01-23T02:22:13 IST" duration-ms="2049" status="PASS">
+      </class> <!-- finalproject.homepage -->
+    </test> <!-- Chrome Tests -->
+    <test started-at="2025-01-23T18:20:55 IST" name="Edge Tests" finished-at="2025-01-23T18:21:07 IST" duration-ms="12471">
+      <class name="finalproject.homepage">
+        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:finalproject.homepage@1b7cc17c]" started-at="2025-01-23T18:20:55 IST" name="setDriver" finished-at="2025-01-23T18:20:56 IST" duration-ms="1020" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -363,18 +107,44 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="verifyhealthProgramDropdown()[pri:0, instance:finalproject.homepage@33d512c1]" started-at="2025-01-23T02:22:13 IST" name="verifyhealthProgramDropdown" finished-at="2025-01-23T02:22:17 IST" duration-ms="3263" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="verifyeachHealthProgramPageContent()[pri:0, instance:finalproject.homepage@1b7cc17c]" started-at="2025-01-23T18:20:56 IST" name="verifyeachHealthProgramPageContent" finished-at="2025-01-23T18:21:06 IST" duration-ms="10284" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Dropdown values do not match!: Lists differ at element [0]: Tobacco !=  expected [Tobacco] but found []]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(text(),'Sign Up for Healthy Aging Classes')]"}
+  (Session info: MicrosoftEdge=132.0.2957.115)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.28.0', revision: 'ac342546e9'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.2', java.version: '23.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [9a090aede905ecadcdfda45fc100c3b6, findElement {using=xpath, value=//h1[contains(text(),'Sign Up for Healthy Aging Classes')]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 132.0.2957.115, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50906}, msedge: {msedgedriverVersion: 132.0.2957.115 (f14150e8a7c..., userDataDir: /var/folders/5g/p48r3ym11s1...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50906/devtoo..., se:cdpVersion: 132.0.2957.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9a090aede905ecadcdfda45fc100c3b6]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Dropdown values do not match!: Lists differ at element [0]: Tobacco !=  expected [Tobacco] but found []
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:1103)
-at finalproject.homepage.verifyhealthProgramDropdown(homepage.java:64)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(text(),'Sign Up for Healthy Aging Classes')]"}
+  (Session info: MicrosoftEdge=132.0.2957.115)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.28.0', revision: 'ac342546e9'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.2', java.version: '23.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [9a090aede905ecadcdfda45fc100c3b6, findElement {using=xpath, value=//h1[contains(text(),'Sign Up for Healthy Aging Classes')]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 132.0.2957.115, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50906}, msedge: {msedgedriverVersion: 132.0.2957.115 (f14150e8a7c..., userDataDir: /var/folders/5g/p48r3ym11s1...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50906/devtoo..., se:cdpVersion: 132.0.2957.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9a090aede905ecadcdfda45fc100c3b6
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at finalproject.homepage.verifyeachHealthProgramPageContent(homepage.java:141)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -403,11 +173,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyhealthProgramDropdown -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:finalproject.homepage@33d512c1]" started-at="2025-01-23T02:22:17 IST" name="quitBrowser" finished-at="2025-01-23T02:22:18 IST" duration-ms="1431" status="PASS">
+        </test-method> <!-- verifyeachHealthProgramPageContent -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:finalproject.homepage@1b7cc17c]" started-at="2025-01-23T18:21:06 IST" name="quitBrowser" finished-at="2025-01-23T18:21:07 IST" duration-ms="1165" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
