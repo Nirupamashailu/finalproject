@@ -9,13 +9,34 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">CrossBrowser Test Suite</th></tr>
-<tr><td><a href="#t0">Chrome Tests</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">65,773</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Chrome Tests</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">143,164</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">CrossBrowser Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Chrome Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">finalproject.homepage</td><td><a href="#m0">VerifysearchBarFunctionality</a></td><td rowspan="1">1737662039804</td><td rowspan="1">5071</td></tr><tr class="passedeven"><td><a href="#m1">userRegistrationandlogin</a></td><td rowspan="1">1737662045718</td><td rowspan="1">15109</td></tr><tr class="passedeven"><td><a href="#m2">verifyHealthProgramResourcelinks</a></td><td rowspan="1">1737662061621</td><td rowspan="1">14539</td></tr><tr class="passedeven"><td><a href="#m3">verifyNavigationBar</a></td><td rowspan="1">1737662076998</td><td rowspan="1">3685</td></tr><tr class="passedeven"><td><a href="#m4">verifyeachHealthProgramPageContent</a></td><td rowspan="1">1737662081503</td><td rowspan="1">17598</td></tr><tr class="passedeven"><td><a href="#m5">verifyhealthProgramDropdown</a></td><td rowspan="1">1737662099933</td><td rowspan="1">4461</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">CrossBrowser Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Chrome Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">finalproject.homepage</td><td><a href="#m0">verifyHealthProgramResourcelinks</a></td><td rowspan="1">1737663341821</td><td rowspan="1">46327</td></tr><tr><th colspan="4">Chrome Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">finalproject.homepage</td><td><a href="#m1">VerifysearchBarFunctionality</a></td><td rowspan="1">1737663309398</td><td rowspan="1">8689</td></tr><tr class="passedeven"><td><a href="#m2">userRegistrationandlogin</a></td><td rowspan="1">1737663321351</td><td rowspan="1">17934</td></tr><tr class="passedeven"><td><a href="#m3">verifyNavigationBar</a></td><td rowspan="1">1737663391655</td><td rowspan="1">4902</td></tr><tr class="passedeven"><td><a href="#m4">verifyeachHealthProgramPageContent</a></td><td rowspan="1">1737663398749</td><td rowspan="1">36211</td></tr><tr class="passedeven"><td><a href="#m5">verifyhealthProgramDropdown</a></td><td rowspan="1">1737663438649</td><td rowspan="1">5843</td></tr></tbody>
 </table>
-<h2>Chrome Tests</h2><h3 id="m0">finalproject.homepage#VerifysearchBarFunctionality</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">finalproject.homepage#userRegistrationandlogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">finalproject.homepage#verifyHealthProgramResourcelinks</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Chrome Tests</h2><h3 id="m0">finalproject.homepage#verifyHealthProgramResourcelinks</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=132.0.6834.83)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a01994ee5fc70b25d202c51afaa0ad0a, getElementAttribute {id=f.896192BB6B84B8778E6CEA48F2460499.d.12CAC4E491D1ECE7B0F5D3BA91EDCBDE.e.51, name=href}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: C:\Users\KALLURI SHOBAN BAB...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56752}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56752/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (a01994ee5fc70b25d202c51afaa0ad0a)] -&gt; css selector: .fusion-content-boxes]] -&gt; tag name: a]
+Session ID: a01994ee5fc70b25d202c51afaa0ad0a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:149)
+	at finalproject.homepage.verifyHealthProgramResourcelinks(homepage.java:88)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">finalproject.homepage#VerifysearchBarFunctionality</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">finalproject.homepage#userRegistrationandlogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">finalproject.homepage#verifyNavigationBar</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m4">finalproject.homepage#verifyeachHealthProgramPageContent</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m5">finalproject.homepage#verifyhealthProgramDropdown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
