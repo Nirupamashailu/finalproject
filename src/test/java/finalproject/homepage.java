@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import org.openqa.selenium.Keys;
+import io.qameta.allure.Description;
 
 public class homepage {
 
@@ -27,6 +28,7 @@ public class homepage {
 	};
 
 	@Test
+	@Description("Test to verify navigation bar") 
 	public void verifyNavigationBar() {
 
 		driver.get("https://westfloridaahec.org/");
@@ -40,7 +42,7 @@ public class homepage {
 	};
 
 	@Test
-
+	@Description("Test to verify all health programs dropdown") 
 	public void verifyhealthProgramDropdown() {
 		driver.get("https://westfloridaahec.org/");
 
@@ -67,6 +69,7 @@ public class homepage {
 	}
 
 	@Test
+	@Description("Test to verify health program resource links on homepage ") 
 	public void verifyHealthProgramResourcelinks() {
 		driver.get("https://westfloridaahec.org/");
 		WebElement container = driver.findElement(By.cssSelector(".fusion-content-boxes"));
@@ -101,6 +104,7 @@ public class homepage {
 	}
 
 	@Test
+	@Description("Test to verify search bar") 
 	public void VerifysearchBarFunctionality() {
 		driver.get("https://westfloridaahec.org/");
 		WebElement searchbox = driver.findElement(By.xpath(
@@ -114,6 +118,7 @@ public class homepage {
 	}
 
 	@Test
+	@Description("Test to verify health program content") 
 	public void verifyeachHealthProgramPageContent() {
 
 		driver.get("https://westfloridaahec.org/");
@@ -161,6 +166,7 @@ public class homepage {
 	}
 
 	@Test
+	@Description("Test to verify User registration and login") 
 	public void userRegistrationandlogin() {
 		driver.get("https://westfloridaahec.org/my-account/");
 		driver.findElement(By.xpath("//*[@id='reg_username']")).sendKeys("Nupsu4");
