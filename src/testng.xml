@@ -1,12 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="CrossBrowser Test Suite">
 <listeners>
         <listener class-name="io.qameta.allure.testng.AllureTestNg" />
     </listeners>
-    <test name="Chrome Tests">
+  <test name="Chrome Tests">
         <parameter name="browserName" value="chrome" />
         <classes>
-            <class name="finalproject.homepage" />
+            <class name="homepage" />
         </classes>
     </test>
 </suite>
