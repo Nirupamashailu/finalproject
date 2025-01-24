@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                    <span class="method-stats">6 methods, 5 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,7 +103,27 @@
                     <div class="method-list-content failed suite-CrossBrowser_Test_Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowser_Test_Suite" title="finalproject.homepage" class="method navigator-link" hash-for-method="userRegistrationandlogin">userRegistrationandlogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-CrossBrowser_Test_Suite" title="finalproject.homepage" class="method navigator-link" hash-for-method="verifyHealthProgramResourcelinks">verifyHealthProgramResourcelinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowser_Test_Suite" title="finalproject.homepage" class="method navigator-link" hash-for-method="verifyNavigationBar">verifyNavigationBar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowser_Test_Suite" title="finalproject.homepage" class="method navigator-link" hash-for-method="verifyeachHealthProgramPageContent">verifyeachHealthProgramPageContent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowser_Test_Suite" title="finalproject.homepage" class="method navigator-link" hash-for-method="verifyhealthProgramDropdown">verifyhealthProgramDropdown</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-CrossBrowser_Test_Suite -->
@@ -118,26 +138,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-CrossBrowser_Test_Suite" title="finalproject.homepage" class="method navigator-link" hash-for-method="VerifysearchBarFunctionality">VerifysearchBarFunctionality</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-CrossBrowser_Test_Suite" title="finalproject.homepage" class="method navigator-link" hash-for-method="userRegistrationandlogin">userRegistrationandlogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-CrossBrowser_Test_Suite" title="finalproject.homepage" class="method navigator-link" hash-for-method="verifyNavigationBar">verifyNavigationBar</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-CrossBrowser_Test_Suite" title="finalproject.homepage" class="method navigator-link" hash-for-method="verifyeachHealthProgramPageContent">verifyeachHealthProgramPageContent</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-CrossBrowser_Test_Suite" title="finalproject.homepage" class="method navigator-link" hash-for-method="verifyhealthProgramDropdown">verifyhealthProgramDropdown</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-CrossBrowser_Test_Suite -->
@@ -160,19 +160,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyHealthProgramResourcelinks">
-                  </a> <!-- verifyHealthProgramResourcelinks -->
-                  <span class="method-name">verifyHealthProgramResourcelinks</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=132.0.6834.83)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+                  <a name="userRegistrationandlogin">
+                  </a> <!-- userRegistrationandlogin -->
+                  <span class="method-name">userRegistrationandlogin</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.110)
 Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a01994ee5fc70b25d202c51afaa0ad0a, getElementAttribute {id=f.896192BB6B84B8778E6CEA48F2460499.d.12CAC4E491D1ECE7B0F5D3BA91EDCBDE.e.51, name=href}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: C:\Users\KALLURI SHOBAN BAB...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56752}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56752/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[ChromeDriver: chrome on windows (a01994ee5fc70b25d202c51afaa0ad0a)] -&gt; css selector: .fusion-content-boxes]] -&gt; tag name: a]
-Session ID: a01994ee5fc70b25d202c51afaa0ad0a
+Command: [f728527ddb59d7beab6b7bf8a79a3c2e, findElement {using=xpath, value=//*[@id=&apos;reg_username&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.110, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: C:\Users\KALLURI SHOBAN BAB...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51609}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51609/devtoo..., se:cdpVersion: 132.0.6834.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f728527ddb59d7beab6b7bf8a79a3c2e
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -180,9 +179,135 @@ Session ID: a01994ee5fc70b25d202c51afaa0ad0a
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:149)
-	at finalproject.homepage.verifyHealthProgramResourcelinks(homepage.java:88)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at finalproject.homepage.userRegistrationandlogin(homepage.java:172)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHealthProgramResourcelinks">
+                  </a> <!-- verifyHealthProgramResourcelinks -->
+                  <span class="method-name">verifyHealthProgramResourcelinks</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.110)
+Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f814801a128a0cedbb47835b913824b0, findElement {using=css selector, value=.fusion-content-boxes}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.110, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: C:\Users\KALLURI SHOBAN BAB...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51625}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51625/devtoo..., se:cdpVersion: 132.0.6834.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f814801a128a0cedbb47835b913824b0
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at finalproject.homepage.verifyHealthProgramResourcelinks(homepage.java:75)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNavigationBar">
+                  </a> <!-- verifyNavigationBar -->
+                  <span class="method-name">verifyNavigationBar</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.110)
+Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [084c36846931ca47edcde0e8349001ce, findElement {using=xpath, value=//nav[@class=&quot;fusion-main-menu&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.110, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: C:\Users\KALLURI SHOBAN BAB...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51641}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51641/devtoo..., se:cdpVersion: 132.0.6834.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 084c36846931ca47edcde0e8349001ce
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at finalproject.homepage.verifyNavigationBar(homepage.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyeachHealthProgramPageContent">
+                  </a> <!-- verifyeachHealthProgramPageContent -->
+                  <span class="method-name">verifyeachHealthProgramPageContent</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.110)
+Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7ee5650b07d19b666668c5dffa32b768, findElement {using=xpath, value=//li[@id=&apos;menu-item-264&apos;]/a/span[contains(text(),&apos;PROGRAMS&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.110, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: C:\Users\KALLURI SHOBAN BAB...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51655}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51655/devtoo..., se:cdpVersion: 132.0.6834.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ee5650b07d19b666668c5dffa32b768
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at finalproject.homepage.verifyeachHealthProgramPageContent(homepage.java:125)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyhealthProgramDropdown">
+                  </a> <!-- verifyhealthProgramDropdown -->
+                  <span class="method-name">verifyhealthProgramDropdown</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.110)
+Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b25a2866e6ca997cbdaf3acc6222fe34, findElement {using=xpath, value=//li[@id=&apos;menu-item-264&apos;]/a/span[contains(text(),&apos;PROGRAMS&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.110, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: C:\Users\KALLURI SHOBAN BAB...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51668}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51668/devtoo..., se:cdpVersion: 132.0.6834.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b25a2866e6ca997cbdaf3acc6222fe34
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at finalproject.homepage.verifyhealthProgramDropdown(homepage.java:54)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 28 stack frames
 </div> <!-- stack-trace -->
@@ -201,34 +326,6 @@ Session ID: a01994ee5fc70b25d202c51afaa0ad0a
                   <a name="VerifysearchBarFunctionality">
                   </a> <!-- VerifysearchBarFunctionality -->
                   <span class="method-name">VerifysearchBarFunctionality</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="userRegistrationandlogin">
-                  </a> <!-- userRegistrationandlogin -->
-                  <span class="method-name">userRegistrationandlogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyNavigationBar">
-                  </a> <!-- verifyNavigationBar -->
-                  <span class="method-name">verifyNavigationBar</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyeachHealthProgramPageContent">
-                  </a> <!-- verifyeachHealthProgramPageContent -->
-                  <span class="method-name">verifyeachHealthProgramPageContent</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyhealthProgramDropdown">
-                  </a> <!-- verifyhealthProgramDropdown -->
-                  <span class="method-name">verifyhealthProgramDropdown</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -291,34 +388,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyHealthProgramResourcelinks')
+data.setCell(0, 1, 'userRegistrationandlogin')
 data.setCell(0, 2, 'finalproject.homepage')
-data.setCell(0, 3, 46327);
+data.setCell(0, 3, 19687);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyeachHealthProgramPageContent')
+data.setCell(1, 1, 'VerifysearchBarFunctionality')
 data.setCell(1, 2, 'finalproject.homepage')
-data.setCell(1, 3, 36211);
+data.setCell(1, 3, 8702);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'userRegistrationandlogin')
+data.setCell(2, 1, 'verifyeachHealthProgramPageContent')
 data.setCell(2, 2, 'finalproject.homepage')
-data.setCell(2, 3, 17934);
+data.setCell(2, 3, 1581);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'VerifysearchBarFunctionality')
+data.setCell(3, 1, 'verifyHealthProgramResourcelinks')
 data.setCell(3, 2, 'finalproject.homepage')
-data.setCell(3, 3, 8689);
+data.setCell(3, 3, 1133);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyhealthProgramDropdown')
+data.setCell(4, 1, 'verifyNavigationBar')
 data.setCell(4, 2, 'finalproject.homepage')
-data.setCell(4, 3, 5843);
+data.setCell(4, 3, 1032);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyNavigationBar')
+data.setCell(5, 1, 'verifyhealthProgramDropdown')
 data.setCell(5, 2, 'finalproject.homepage')
-data.setCell(5, 3, 4902);
+data.setCell(5, 3, 932);
 window.suiteTableData['CrossBrowser_Test_Suite']= { tableData: data, tableDiv: 'times-div-CrossBrowser_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 33 seconds</span>
               <div id="times-div-CrossBrowser_Test_Suite">
               </div> <!-- times-div-CrossBrowser_Test_Suite -->
             </div> <!-- times-div -->
@@ -351,73 +448,81 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifysearchBarFunctionality</span>
-                <span class="method-start">7171 ms</span>
+                <span class="method-start">5144 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">15967 ms</span>
+                <span class="method-start">13926 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setDriver(chrome)</span>
-                <span class="method-start">16952 ms</span>
+                <span class="method-start">14646 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">userRegistrationandlogin</span>
-                <span class="method-start">19124 ms</span>
+                <span class="method-start">16577 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">37104 ms</span>
+                <span class="method-start">36300 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setDriver(chrome)</span>
-                <span class="method-start">37710 ms</span>
+                <span class="method-start">36670 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyHealthProgramResourcelinks</span>
-                <span class="method-start">39594 ms</span>
+                <span class="method-start">38533 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">86095 ms</span>
+                <span class="method-start">39689 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setDriver(chrome)</span>
-                <span class="method-start">86873 ms</span>
+                <span class="method-start">40039 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyNavigationBar</span>
-                <span class="method-start">89428 ms</span>
+                <span class="method-start">41857 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">94338 ms</span>
+                <span class="method-start">42905 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setDriver(chrome)</span>
-                <span class="method-start">94758 ms</span>
+                <span class="method-start">43253 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyeachHealthProgramPageContent</span>
-                <span class="method-start">96522 ms</span>
+                <span class="method-start">44954 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">132888 ms</span>
+                <span class="method-start">46545 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setDriver(chrome)</span>
-                <span class="method-start">134203 ms</span>
+                <span class="method-start">46957 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyhealthProgramDropdown</span>
-                <span class="method-start">136422 ms</span>
+                <span class="method-start">48752 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">142274 ms</span>
+                <span class="method-start">49697 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

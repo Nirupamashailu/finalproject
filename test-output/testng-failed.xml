@@ -9,8 +9,12 @@
     <classes>
       <class name="finalproject.homepage">
         <methods>
+          <include name="userRegistrationandlogin"/>
+          <include name="verifyNavigationBar"/>
+          <include name="verifyhealthProgramDropdown"/>
           <include name="quitBrowser"/>
           <include name="setDriver"/>
+          <include name="verifyeachHealthProgramPageContent"/>
           <include name="verifyHealthProgramResourcelinks"/>
         </methods>
       </class> <!-- finalproject.homepage -->
