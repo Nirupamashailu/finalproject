@@ -10,4 +10,13 @@
             <class name="homepage" />
         </classes>
     </test>
+     <test name="edge Tests">
+        <parameter name="browserName" value="edge" />
+        <classes>
+            <class name="homepage" />
+        </classes>
+    </test>
+  
+        
+    
 </suite>
